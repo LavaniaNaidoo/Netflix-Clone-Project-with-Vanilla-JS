@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Netflix </title>
+    <link rel="stylesheet" href="../Home Page/Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins:ital,wght@0,200;0,300;0,400;1,200&family=Roboto+Condensed:wght@300;400&family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+<!-- Netflix navbar at top -->
+        <nav id="navbar" class="navbar">
+            <div class="nav-left">
+                <a href="../Home Page/Index.html">
+                    <img src="../Home Page/Images/Netflix-Logo.png" id="netflixlogo" alt="Netflix Logo"> 
+                </a>
+                <ul class="primary-navigation">
+                    <li class="category">
+                        <a class="browse-active" href="../Home Page/Index.html"> Home </a>
+                    </li>
+                    <li class="category">
+                        <a class="browse-active" href="#movies"> Movies </a>
+                    </li>
+                    <li class="category">
+                        <a class="browse-active" href="#tvshows"> TV Shows </a>
+                    </li>
+                    <li class="category">
+                        <a class="browse-active" href="#popular"> Popular </a>
+                    </li>
+                    <li class="category">
+                        <button><a class="watchlist" href="../Home Page/Watchlist/Watchlist.html"> My List </a></button>
+                    </li>
+                    <li class="category">
+                        <a class="browse-active" href="#comingSoon"> Coming Soon </a>
+                    </li>
+                </ul>
+            </div>
+
+<!-- Netflix Right hand navbar section (Search bar, Movie profile and Notification icon) -->
+            <input type="text" class="navRight" id="search-bar" placeholder="Search" />
+		           </div>
+            <div class="nav-right">
+              <ul class="list-nav-right">
+                  <li class="category">
+                        <a class="browse-active" href="../Login page/Main.html"> Me </a>
+                    </li>
+                </ul>
+                <button class="notfications-btn"><img class="notification" src="../Home Page/Images/notification-icon.png" alt="Notifications"></button>
+                <button class="my-profile"><img class="my-profile" src="../Home Page/Images/AvatarIcon.jpg" alt="My Profile"></button>
+            </div>
+        </nav>
+        </nav>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</div>
+
+<!-- Movie Banner -->
+    <div class="banner" id="banner">
+        <video id="video" class="banner" poster="../Home Page/Images/purple hearts 3.jpg" style="pointer-events:none;">
+            <source src="../Home Page/Videos/yt5s.com-Purple Hearts _ Sneak Peek Exclusive Clip _ Netflix-(1080p).mp4" type="video/mp4"/>
+        </video>
+        <div class="banner_contents">
+            <h2 class="banner_title"> Purple Hearts </h2>
+            <div class="banner_buttons">
+          <!-- "Play" button actually plays the teaser trailer for the new and upcoming movie, Purple Hearts -->
+                <button class="banner_button" id="btnPlayPause" accesskey="p" onclick="playPauseVideo()"> Play </button>
+                <button class="banner_button"> My List </button>
+            </div>
+            <div class="banner_desc">
+                Based on the 2017 Tess Wakefield novel. Cassie, a struggling singer-songwriter who vowed never to date military guys, then weds a Marine named Luke in a marriage of convenience.
+            </div>
+        </div>
+    </div>
+
+<!-- Coming soon movies at top -->
+    <h1 class="section-title" id="comingSoon"> Coming Soon </h1>
+    <div class="media-container">
+      <div class="media-scroller">
+  
+      <!--   Group 1 -->
+        <div class="media-group" id="group-1">
+          <div class="media-element">
+            <img id="image"
+              src="../Home Page/Images/love in the villa.jpg"
+              alt="love in the villa poster" >
+        <!-- "Play" movie button redirects you to the actual trailer of the desired movie -->
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/_kRab62q54M';"><div> Play</div></button> 
+              <button class="banner_button" type="submit"><div>My List</div></button>
+            </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/After Ever Happy 1.jpg"
+              alt="after ever happy poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/TlAukkPK-dc';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+ 
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/cobra kai.jpg"
+              alt="cobra kai poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/sUR9PYwlNaA';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/bridgerton s2.jpg"
+              alt="bridgerton poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/Bs9r1UbmFAI';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/fate the winx saga.jpg"
+              alt="fate the winx saga poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/YlNEvyjEWLQ';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+  
+          <a class="next" href="#group-2" aria-label="next">
+            <svg>
+              <use href="#next"></use>
+            </svg>
+          </a>
+        </div>
+  
+        <!-- Group 2   -->
+        <div class="media-group" id="group-2">
+          <a class="previous" href="#group-1">
+            <svg>
+              <use href="#previous"></use>
+            </svg>
+          </a>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/elektra.jpg"
+              alt="elektra poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/XGnADb5e0mc';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/mr and mrs smith.jpg"
+              alt="mr and mrs smith poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/CZ0B22z22pI';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/good girls 1.jpg"
+              alt="good girls poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/kbjIaPzODs0';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/he's all that.jpg"
+              alt="he's all that poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/XqTPaRz8Nx8';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/riverdale.jpg"
+              alt="riverdale poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/HxtLlByaYTc';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <a class="next" href="#group-3" aria-label="next">
+            <svg>
+              <use href="#next"></use>
+            </svg>
+          </a>
+        </div>
+  
+        <!-- Group 3   -->
+        <div class="media-group" id="group-3">
+          <a class="previous" href="#group-2">
+            <svg>
+              <use href="#previous"></use>
+            </svg>
+          </a>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/blood and water.jpg"
+              alt="blood and water poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/2m0Cm2kMOBU';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/the sandman.jpg"
+              alt="the sandman poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/83ClbRPRDXU';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/dynasty.jpg"
+              alt="dynasty poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/Uq0soWMpkv8';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/fifty shades freed.jpg"
+              alt="fifty shades freed poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/av4zbG8dAhk';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/me time.jpg"
+              alt="me time poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/Mmq_NVwLN_g';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <a class="next" href="#group-4" aria-label="next">
+            <svg>
+              <use href="#next"></use>
+            </svg>
+          </a>
+        </div>
+  
+        <!--  Group 4  -->
+        <div class="media-group" id="group-4">
+          <a class="previous" href="#group-3">
+            <svg>
+              <use href="#previous"></use>
+            </svg>
+          </a>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/halftime.jpg"
+              alt="halftime poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/-voLo_TIWf4';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/the gray man.jpg"
+              alt="the gray man poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/BmllggGO4pM';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/interceptor.jpg"
+              alt="interceptor poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/OQSoII4Bj1o';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/outer banks.jpg"
+              alt="outerbanks poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/uk_hFfUFXh4';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/peaky blinders.jpg"
+              alt="peaky blinders poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/oVzVdvGIC7U';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+        </div>
+  
+        <div class="navigation-indicators">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+  
+      </div>
+    </div>
+    <svg>
+      <symbol id="next" viewBox="0 0 256 512">
+        <path fill="White"
+          d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+      </symbol>
+  
+      <symbol id="previous" viewBox="0 0 256 512">
+        <path fill="White"
+          d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
+      </symbol>
+    </svg>
+
+<!-- Movie Section after Coming Soon -->
+    <h1 class="section-title" id="movies"> Movies  </h1>
+
+    <div class="media-container">
+      <div class="media-scroller">
+  
+        <!--   Group 5 -->
+        <div class="media-group" id="group-5">
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/turning red.jpg"
+              alt="turning red poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/XdKzUbAiswE';"><div>Play</div></button>
+              <button class="banner_button" id="addToWatchList"><div>My List</div></button>
+            </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/john wick chapter 4.jpg"
+              alt="john wick chapter 4 poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/M7XM597XO94';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/minions.jpg"
+              alt="minions poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/6DxjJzmYsXo';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/the kissing booth.jpg"
+              alt="the kissing booth poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/7bfS6seiLhk';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/the next 365 days.png"
+              alt="the next 365 days poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/pyM3z73oMAk';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+  
+          <a class="next" href="#group-6" aria-label="next">
+            <svg>
+              <use href="#next"></use>
+            </svg>
+          </a>
+        </div>
+  
+        <!-- Group 6   -->
+        <div class="media-group" id="group-6">
+          <a class="previous" href="#group-5">
+            <svg>
+              <use href="#previous"></use>
+            </svg>
+          </a>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/the old guard.jpg"
+              alt="the old guard poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/aK-X2d0lJ_s';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/through my window.jpg"
+              alt="through my window poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/_zxhK3Z-R0c';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/madea homecoming.jpg"
+              alt="madea homecoming poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/afJXk-RgzoQ';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/senior year.jpg"
+              alt="senior year poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/HCtDkpe89aY';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/the perfect pairing.jpg"
+              alt="perfect pairing poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/WR21TH-6LfY';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <a class="next" href="#group-7" aria-label="next">
+            <svg>
+              <use href="#next"></use>
+            </svg>
+          </a>
+        </div>
+  
+        <!-- Group 7   -->
+        <div class="media-group" id="group-7">
+          <a class="previous" href="#group-6">
+            <svg>
+              <use href="#previous"></use>
+            </svg>
+          </a>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/call me by your name.jpg"
+              alt="call me by your name poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/Z9AYPxH5NTM';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/waves.jpg"
+              alt="waves poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/V5z3cr8AB5g';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/endless love.jpg"
+              alt="endless love poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/NTAzn4W48gc';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/the lucky ones.jpg"
+              alt="the lucky one poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/9w8lE83oYeM';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/love and other drugs.jpg"
+              alt="love and other drugs poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/h6w7Dh-QxzY';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <a class="next" href="#group-8" aria-label="next">
+            <svg>
+              <use href="#next"></use>
+            </svg>
+          </a>
+        </div>
+  
+        <!--  Group 8  -->
+        <div class="media-group" id="group-8">
+          <a class="previous" href="#group-7">
+            <svg>
+              <use href="#previous"></use>
+            </svg>
+          </a>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/red notice.jpg"
+              alt="red notice poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/Pj0wz7zu3Ms';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/american underdog.jpg"
+              alt="american underdog poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/_6rn-6lKBJ8';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/persuasion.jpg"
+              alt="persuasion poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/Fz7HmgPJQak';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/the unforgivable.jpg"
+              alt="the unforgivable poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/JNUjx7LZoiU';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/the notebook.jpg"
+              alt="the notebook poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/BjJcYdEOI0k';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+        </div>
+  
+        <div class="navigation-indicators">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+  
+      </div>
+    </div>
+
+    <svg>
+      <symbol id="next" viewBox="0 0 256 512">
+        <path fill="White"
+          d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+      </symbol>
+  
+      <symbol id="previous" viewBox="0 0 256 512">
+        <path fill="White"
+          d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
+      </symbol>
+    </svg>
+
+<!-- TV Shows section -->
+    <h1 class="section-title" id="tvshows"> TV Shows </h1>
+    <div class="media-container">
+      <div class="media-scroller">
+  
+        <!--   Group 9 -->
+        <div class="media-group" id="group-9">
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/You 1.jpg"
+              alt="you poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/xXBTImqyeU0';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+            </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/Never have I ever.webp"
+              alt="never have i ever poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/d_N99x0gAAk';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/Stranger things.webp"
+              alt="stranger things poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/b9EkMc79ZSU';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/the queens gambit.webp"
+              alt="the queens gambit poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/oZn3qSgmLqI';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/the flash.jpg"
+              alt="the flash poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/Yj0l7iGKh8g';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+  
+          <a class="next" href="#group-10" aria-label="next">
+            <svg>
+              <use href="#next"></use>
+            </svg>
+          </a>
+        </div>
+  
+        <!-- Group 10   -->
+        <div class="media-group" id="group-10">
+          <a class="previous" href="#group-9">
+            <svg>
+              <use href="#previous"></use>
+            </svg>
+          </a>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/the vampire diaries.jpg"
+              alt="vampire diaries poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/BmVmhjjkN4E';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/the originals.jpg"
+              alt="the originals poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/GXrDYboUnnw';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/teen wolf.jpg"
+              alt="teen wolf poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/1rCYDbefnmA';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/vampire academy.jpg"
+              alt="vampire academy poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/Gw_xrllOGu0';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/only murders in the building.jpg"
+              alt="only murders in the building poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/JRgyBaTulbs';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <a class="next" href="#group-11" aria-label="next">
+            <svg>
+              <use href="#next"></use>
+            </svg>
+          </a>
+        </div>
+  
+        <!-- Group 11   -->
+        <div class="media-group" id="group-11">
+          <a class="previous" href="#group-10">
+            <svg>
+              <use href="#previous"></use>
+            </svg>
+          </a>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/sex life.jpg"
+              alt="sex life poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/jCS-Y6Sp7CI';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/ginny and georgia.jpg"
+              alt="ginny and georgia poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/e34_mMhe4WQ';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/emily in paris.jpg"
+              alt="emily in paris poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/lptctjAT-Mk';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/13 reasons why.jpg"
+              alt="13 reasons why poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/QkT-HIMSrRk';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/jane the virgin.jpg"
+              alt="jane the virgin poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/JOKUcwrPFmg';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <a class="next" href="#group-12" aria-label="next">
+            <svg>
+              <use href="#next"></use>
+            </svg>
+          </a>
+        </div>
+  
+        <!--  Group 12  -->
+        <div class="media-group" id="group-12">
+          <a class="previous" href="#group-11">
+            <svg>
+              <use href="#previous"></use>
+            </svg>
+          </a>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/gilmore girls.jpg"
+              alt="gilmore girls poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/YwY86TlfDI0';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/too hot to handle.jpg"
+              alt="too hot to handle poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/2JgPJpgnut4';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/the arrow.jpg"
+              alt="arrow poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/XQS7JkQmlx8';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/supergirl.jpg"
+              alt="supergirl poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/mlgL6FbqsVI';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/she hulk.jpg"
+              alt="she hulk poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/u7JsKhI2An0';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+        </div>
+  
+        <div class="navigation-indicators">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+  
+      </div>
+    </div>
+
+    <svg>
+      <symbol id="next" viewBox="0 0 256 512">
+        <path fill="White"
+          d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+      </symbol>
+  
+      <symbol id="previous" viewBox="0 0 256 512">
+        <path fill="White"
+          d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
+      </symbol>
+    </svg>
+
+<!-- Popular Movies Section -->
+    <h1 class="section-title" id="popular"> Popular </h1>
+
+    <div class="media-container">
+      <div class="media-scroller">
+  
+        <!--   Group 13 -->
+        <div class="media-group" id="group-13">
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/the karate kid.webp"
+              alt="karate kid poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/xlnm0NtPoVs';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+            </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/after 1.jpg"
+              alt="after poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/rPTf0Gw5-Bg';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/atlantis.jpg"
+              alt="atlantis poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/sZIimDPZQwg';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/dirty dancing.jpg"
+              alt="dirty dancing poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/eIcmQNy9FsM';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/how to train your dragon.jpg"
+              alt="how train your dragon poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/2AKsAxrhqgM';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+  
+          <a class="next" href="#group-14" aria-label="next">
+            <svg>
+              <use href="#next"></use>
+            </svg>
+          </a>
+        </div>
+  
+        <!-- Group 14   -->
+        <div class="media-group" id="group-14">
+          <a class="previous" href="#group-13">
+            <svg>
+              <use href="#previous"></use>
+            </svg>
+          </a>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/grease.jpg"
+              alt="grease poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/qDKo8DNpwOw';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/enough.jpg"
+              alt="enough poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/L1WWhWsvOZg';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/how to lose a guy in 10 days.jpg"
+              alt="how to lose a guy in 10 days poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/2ZMGk_Ml1fc';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/saturday night fever.jpg"
+              alt="saturday night fever poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/RZTP586-Y9E';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/captain america.jpg"
+              alt="captain america poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/JerVrbLldXw';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <a class="next" href="#group-15" aria-label="next">
+            <svg>
+              <use href="#next"></use>
+            </svg>
+          </a>
+        </div>
+  
+        <!-- Group 15   -->
+        <div class="media-group" id="group-15">
+          <a class="previous" href="#group-14">
+            <svg>
+              <use href="#previous"></use>
+            </svg>
+          </a>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/venom.jpg"
+              alt="venom poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/u9Mv98Gr5pY';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/transformers.jpg"
+              alt="transformers poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/v8ItGrI-Ou0';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/jumper.jpg"
+              alt="jumper poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/DtacNQkFHvo';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/the last airbender.jpg"
+              alt="the last airbender poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/WdoiHMCVqMQ';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/hunger games.jpg"
+              alt="hunger games poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/mfmrPu43DF8';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <a class="next" href="#group-16" aria-label="next">
+            <svg>
+              <use href="#next"></use>
+            </svg>
+          </a>
+        </div>
+  
+        <!--  Group 16  -->
+        <div class="media-group" id="group-16">
+          <a class="previous" href="#group-15">
+            <svg>
+              <use href="#previous"></use>
+            </svg>
+          </a>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/pacific rim uprising.jpg"
+              alt="pacific rim poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/_EhiLLOhVis';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/divergent.jpg"
+              alt="divergent poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/Aw7Eln_xuWc';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/another cinderella story.jpg"
+              alt="another cinderella story poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/dEpWl0kmJdQ';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/avatar.jpg"
+              alt="avatar poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/5PSNL1qE6VY';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/the hating game.jpg"
+              alt="hating game poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/0D2sJiseGQA';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+        </div>
+  
+        <div class="navigation-indicators">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+  
+      </div>
+    </div>
+
+    <svg>
+      <symbol id="next" viewBox="0 0 256 512">
+        <path fill="White"
+          d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+      </symbol>
+  
+      <symbol id="previous" viewBox="0 0 256 512">
+        <path fill="White"
+          d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
+      </symbol>
+    </svg>
+
+<!-- Bollywood Movies Section -->
+    <h1 class="section-title"> Bollywood </h1>
+
+    <div class="media-container">
+      <div class="media-scroller">
+  
+        <!--   Group 17 -->
+        <div class="media-group" id="group-17">
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/hamari adhuri kahani.jpg"
+              alt="hamari adhuri kahani poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/2fiT_TJlySk';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+            </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/sanam teri kasam.jpg"
+              alt="sanam teri kasam poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/1IpBoMWRjm8';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/kuch kuch hota hai.jpg"
+              alt="kuch kuch hota hai poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/OtGzATlvw_0';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/khabhi khushi khabie gham.jpg"
+              alt="khabhi khushi khabhi gham poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/7uY1JbWZKPA';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/dil hai tumhaara.jpg"
+              alt="dil hai tumhaara poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/MhFDg9RsDlg';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+  
+          <a class="next" href="#group-18" aria-label="next">
+            <svg>
+              <use href="#next"></use>
+            </svg>
+          </a>
+        </div>
+  
+        <!-- Group 18   -->
+        <div class="media-group" id="group-18">
+          <a class="previous" href="#group-17">
+            <svg>
+              <use href="#previous"></use>
+            </svg>
+          </a>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/tu junooniyat.jpg"
+              alt="tu junooniyat poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/8vicEGLOEdw';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/ae dil he mushkil.jpg"
+              alt="ae dil hai mushkil poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/Z_PODraXg4E';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/dilwale dulhania le jeyenge.jpg"
+              alt="dilwale le jeyenge poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/oIZ4U21DRlM';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/kabir singh.jpg"
+              alt="kabir singh poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/RiANSSgCuJk';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/om shanti om.jpg"
+              alt="om shanti om poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/9oeGoQGt7Ao';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <a class="next" href="#group-19" aria-label="next">
+            <svg>
+              <use href="#next"></use>
+            </svg>
+          </a>
+        </div>
+  
+        <!-- Group 19   -->
+        <div class="media-group" id="group-19">
+          <a class="previous" href="#group-18">
+            <svg>
+              <use href="#previous"></use>
+            </svg>
+          </a>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/student of the year.jpg"
+              alt="student of the year poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/fivOhPjX9YM';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/half girlfriend.jpg"
+              alt="half girlfriend poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/KmlBnmyelHI';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/bang bang.jpg"
+              alt="bang bang poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/MGXQ8bE6lW4';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/yeh jawaani hai deewani.jpg"
+              alt="yeh jawaani hai deewani poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/Rbp2XUSeUNE';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/baar baar dekho.jpg"
+              alt="baar baar dekho poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/3uPtQp8ZT-Q';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <a class="next" href="#group-20" aria-label="next">
+            <svg>
+              <use href="#next"></use>
+            </svg>
+          </a>
+        </div>
+  
+        <!--  Group 20  -->
+        <div class="media-group" id="group-20">
+          <a class="previous" href="#group-19">
+            <svg>
+              <use href="#previous"></use>
+            </svg>
+          </a>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/ram leela.jpg"
+              alt="ram leela poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/StphRCLkx6Q';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/the sky is pink.jpg"
+              alt="the sky is pink poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/prwUFBsDRLk';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/bajirao mastani.jpg"
+              alt="bajirao mastani poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/eHOc-4D7MjY';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/padmaavati.jpg"
+              alt="padmavaati poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/X_5_BLt76c0';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/my name is khan.jpg"
+              alt="my name is khan poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/nqxgYT3TYzY';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+        </div>
+  
+        <div class="navigation-indicators">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+  
+      </div>
+    </div>
+    
+    <svg>
+      <symbol id="next" viewBox="0 0 256 512">
+        <path fill="White"
+          d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+      </symbol>
+  
+      <symbol id="previous" viewBox="0 0 256 512">
+        <path fill="White"
+          d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
+      </symbol>
+    </svg>
+
+<!-- Movies that have been previously watched -->
+    <h1 class="section-title"> Watch it again! </h1>
+
+    <div class="media-container">
+      <div class="media-scroller">
+  
+        <!--   Group 21 -->
+        <div class="media-group" id="group-21">
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/to all the boys.jpg"
+              alt="to all the boys poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/555oiY9RWM4';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+            </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/saturday night fever.jpg"
+              alt="saturday night fever poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/RZTP586-Y9E';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/real steel.jpg"
+              alt="real steel poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/T75j9CoBVzE';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/top gun.webp"
+              alt="top gun poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/xa_z57UatDY';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/yu gi oh.jpg"
+              alt="yu gi oh poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/FlZsX0nz1r4';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+  
+          <a class="next" href="#group-22" aria-label="next">
+            <svg>
+              <use href="#next"></use>
+            </svg>
+          </a>
+        </div>
+  
+        <!-- Group 22   -->
+        <div class="media-group" id="group-22">
+          <a class="previous" href="#group-21">
+            <svg>
+              <use href="#previous"></use>
+            </svg>
+          </a>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/winx club annimated series.jpg"
+              alt="winx club annimated series poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/_wCvB9fa_0c';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/truth or dare.jpg"
+              alt="truth or dare poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/Cgnk3MLw9TM';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/acrimony.jpg"
+              alt="acrimony poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/wlpunOUxYSo';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/midnight sun.jpg"
+              alt="midnight sun poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/fEskVQgtwaI';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/ae dil he mushkil.jpg"
+              alt="ae dil hai mushkil poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/Z_PODraXg4E';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <a class="next" href="#group-23" aria-label="next">
+            <svg>
+              <use href="#next"></use>
+            </svg>
+          </a>
+        </div>
+  
+        <!-- Group 23   -->
+        <div class="media-group" id="group-23">
+          <a class="previous" href="#group-22">
+            <svg>
+              <use href="#previous"></use>
+            </svg>
+          </a>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/herbie.jpg"
+              alt="herbie poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/zD9De1OkJ4o';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/the mummy.jpg"
+              alt="the mummy poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/IjHgzkQM2Sg';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/365 days.jpg"
+              alt="365 days poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/aXtNikiU9lo';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/the cutting edge.jpg"
+              alt="the cutting edge poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/FaGSq6acOtM';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/spiderman.jpg"
+              alt="spiderman poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/rt-2cxAiPJk';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <a class="next" href="#group-24" aria-label="next">
+            <svg>
+              <use href="#next"></use>
+            </svg>
+          </a>
+        </div>
+  
+        <!--  Group 24  -->
+        <div class="media-group" id="group-24">
+          <a class="previous" href="#group-23">
+            <svg>
+              <use href="#previous"></use>
+            </svg>
+          </a>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/i feel pretty.jpg"
+              alt="i feel pretty poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/Yi60f1jPfto';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/the vampire diaries.jpg"
+              alt="the vampire diaries poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/BmVmhjjkN4E';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/ram leela.jpg"
+              alt="ram leela poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/StphRCLkx6Q';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/fast and furious.jpg"
+              alt="fast and furious poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/2TAOizOnNPo';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+          <div class="media-element">
+            <img
+              src="../Home Page/Images/xxx.jpg"
+              alt="xxx poster">
+              <button class="banner_button" onclick="window.location.href='https://youtu.be/xEuM4IUFWu8';"><div>Play</div></button>
+              <button class="banner_button"><div>My List</div></button>
+          </div>
+        </div>
+  
+        <div class="navigation-indicators">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+  
+      </div>
+    </div>
+    
+    <svg>
+      <symbol id="next" viewBox="0 0 256 512">
+        <path fill="White"
+          d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+      </symbol>
+  
+      <symbol id="previous" viewBox="0 0 256 512">
+        <path fill="White"
+          d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
+      </symbol>
+    </svg>
+
+<!-- JavaScript File -->
+<script src="../Home Page/JS.js"></script>
+
+
+</body>
+
+</html>
